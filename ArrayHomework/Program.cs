@@ -7,9 +7,20 @@ namespace ArrayHomework
     {
         static void Main(string[] args)
         {
-            ArraySum();
-            ArrayFindOddEven();
-            ArrayPopulation();
+            ArrayOperator arrayOperator = new ArrayOperator();
+            arrayOperator.callArray();
+        }
+        static void ArrayPopulation()
+        {
+            int[] array1 = { 12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1 };
+            int[] array2 = new int[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(array1[i]);
+                Console.WriteLine(array2[i] = array1[i]);
+            }
+            Console.ReadLine();
         }
         static void ArraySum()
         {
@@ -38,18 +49,6 @@ namespace ArrayHomework
                     Console.WriteLine(numbVal + " - odd number");
                 }
                 }
-            Console.ReadLine();
-        }
-        static void ArrayPopulation()
-        {
-            int[] array1 = {12, 223, 3343, 45345, 23423, 23, 1112, 456, 33, 1};
-            int[] array2 = new int[10];
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(array1[i]);
-                Console.WriteLine(array2[i]=array1[i]);
-            }
             Console.ReadLine();
         }
     }
